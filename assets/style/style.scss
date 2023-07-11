@@ -160,6 +160,20 @@ section.controller {
   }
 }
 
+.functional-btn {
+  // gap: 14px !important;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  .btn-function {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+}
+
 .footer {
   background: linear-gradient(300deg, #a31517, #a31518);
   padding: 40px 20px;
