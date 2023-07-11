@@ -4,7 +4,7 @@ const previousCompletedRound = localStorage.getItem("completedRound");
 let count = previousCount ? parseInt(previousCount) : 0;
 let completedRound = previousCount ? parseInt(previousCompletedRound) : 0;
 
-// setting elements
+// setting elements variable
 const counterContainer = document.querySelector("#counter-container");
 const counterDisplay = document.querySelector("#counter-display");
 const completedRoundText = document.querySelector("#completed-round");
@@ -19,6 +19,26 @@ function updateCompletedRound() {
   completedRoundText.textContent = completedRound;
 }
 
+// Voice selection functionality
+const voices = [
+  { name: "Srila Provapadsss", src: "assets/sounds/chant.mp3" },
+  { name: "Girl", src: "assets/sounds/chant.mp3" },
+];
+
+const voiceSelect = document.querySelector("#voice");
+const voice = new Audio();
+
+voices.forEach(function (voice) {
+  const option = document.createElement("option");
+  option.value = voice.src;
+  option.textContent = voice.name;
+  voiceSelect.appendChild(option);
+});
+
+voiceSelect.addEventListener("change", function () {
+  voice.src = voiceSelect.value;
+});
+
 // Increament Functionality
 function incrementCounter() {
   count++;
@@ -28,7 +48,6 @@ function incrementCounter() {
   counterContainer.scrollIntoView();
 
   // Chant voice
-  const voice = new Audio("assets/sounds/chant.mp3");
   voice.playbackRate = 1.4;
   voice.play();
 
