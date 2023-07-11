@@ -149,11 +149,12 @@ section.controller {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 
   i {
+    opacity: 0.8;
     font-size: 24px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
 }
 
