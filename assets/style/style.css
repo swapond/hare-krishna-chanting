@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: #f6f7f9;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+i {
+  margin: 0 4px;
+}
+
+button.btn-primary {
+  border: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ffffff;
+  padding: 15px 20px;
+}
+
+.container,
+.fixed-width {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner {
+  background: linear-gradient(300deg, #a31517, #a31518);
+}
+.banner .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+  padding: 40px 20px;
+}
+.banner .banner-text {
+  width: 60%;
+  color: white;
+}
+.banner .banner-text h1 {
+  font-size: 3.7rem;
+  text-transform: uppercase;
+}
+.banner .banner-text p {
+  line-height: 30px;
+  margin: 24px 0;
+  max-width: 545px;
+  text-align: justify;
+}
+.banner .banner-img {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  min-width: 270px;
+}
+.banner .banner-img img {
+  width: 100%;
+  max-width: 270px;
+}
+
+.flex {
+  display: flex;
+}
+
+main section {
+  padding: 40px 20px;
+}
+
+section.counter {
+  height: 80vh;
+  max-height: 560px;
+  background-color: #fff;
+  margin-top: 80px;
+  max-width: 750px;
+  border-radius: 5px;
+  border: 2px solid #dbdbdb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+section.counter h3,
+section.counter p {
+  font-family: "Baloo Da 2", cursive;
+  text-align: center;
+}
+section.counter .counter-text {
+  font-size: 80px;
+}
+
+section.controller ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+section.controller ul li {
+  list-style: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section.controller ul .flex {
+  gap: 6px;
+}
+section.controller ul select {
+  border: 1px solid black;
+  padding: 4px 4px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+section.controller ul label {
+  margin-right: 4px;
+}
+
+.footer {
+  background: linear-gradient(300deg, #a31517, #a31518);
+  padding: 40px 20px;
+  color: #fff;
+  text-align: center;
+}
+.footer small {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */
