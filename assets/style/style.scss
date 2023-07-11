@@ -103,6 +103,7 @@ section.counter {
   flex-direction: column;
   justify-content: space-evenly;
   margin-bottom: 20px;
+  position: relative;
   cursor: pointer;
 
   h3,
@@ -112,6 +113,12 @@ section.counter {
   }
   .counter-text {
     font-size: 80px;
+  }
+  .completed-chant {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
