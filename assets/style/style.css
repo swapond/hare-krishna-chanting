@@ -190,6 +190,7 @@ section.controller ul label {
   }
   .banner .banner-text p {
     margin: 15px 0;
+    width: 70%;
   }
   .banner .banner-img {
     width: 100%;
