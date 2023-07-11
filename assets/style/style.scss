@@ -85,6 +85,7 @@ button.btn-primary {
 main {
   section {
     padding: 40px 20px;
+    margin-bottom: 80px;
   }
 }
 
@@ -92,13 +93,14 @@ section.counter {
   height: 80vh;
   max-height: 560px;
   background-color: #fff;
-  margin-top: 80px;
+  margin-top: 100px;
   max-width: 750px;
   border-radius: 5px;
   border: 2px solid #dbdbdb;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin-bottom: 20px;
 
   h3,
   p {
@@ -140,6 +142,18 @@ section.controller {
     label {
       margin-right: 4px;
     }
+  }
+}
+
+.tool-tip {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 24px;
+
+  i {
+    font-size: 24px;
+    padding-bottom: 10px;
   }
 }
 
