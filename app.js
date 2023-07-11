@@ -34,9 +34,34 @@ voices.forEach(function (voice) {
   voiceSelect.appendChild(option);
 });
 
+// Speed selection functionality
+const speeds = [
+  { label: "1.00", value: 1 },
+  { label: "1.25", value: 1.25 },
+  { label: "1.40", value: 1.4 },
+  { label: "1.50", value: 1.5 },
+  { label: "1.70", value: 1.7 },
+];
+
+const speedSelect = document.querySelector("#speed");
+let playbackRate = speeds[2].value;
+
+speeds.forEach(function (speed) {
+  const option = document.createElement("option");
+  option.value = speed.value;
+  option.textContent = speed.label;
+  speedSelect.appendChild(option);
+});
+
+speedSelect.value = playbackRate;
+
+speedSelect.addEventListener("change", function () {
+  playbackRate = parseFloat(speedSelect.value);
+});
+
 function playVoice() {
   const voice = new Audio(voiceSelect.value);
-  voice.playbackRate = 1.4;
+  voice.playbackRate = playbackRate;
   voice.play();
 }
 
