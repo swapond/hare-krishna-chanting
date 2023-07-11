@@ -21,12 +21,11 @@ function updateCompletedRound() {
 
 // Voice selection functionality
 const voices = [
-  { name: "Srila Provapadsss", src: "assets/sounds/chant.mp3" },
+  { name: "Srila Provapad", src: "assets/sounds/chant.mp3" },
   { name: "Girl", src: "assets/sounds/chant.mp3" },
 ];
 
 const voiceSelect = document.querySelector("#voice");
-const voice = new Audio();
 
 voices.forEach(function (voice) {
   const option = document.createElement("option");
@@ -35,9 +34,11 @@ voices.forEach(function (voice) {
   voiceSelect.appendChild(option);
 });
 
-voiceSelect.addEventListener("change", function () {
-  voice.src = voiceSelect.value;
-});
+function playVoice() {
+  const voice = new Audio(voiceSelect.value);
+  voice.playbackRate = 1.4;
+  voice.play();
+}
 
 // Increament Functionality
 function incrementCounter() {
@@ -48,8 +49,7 @@ function incrementCounter() {
   counterContainer.scrollIntoView();
 
   // Chant voice
-  voice.playbackRate = 1.4;
-  voice.play();
+  playVoice();
 
   // Completed Round Notification and Update after 108 count
   if (count === 108) {
