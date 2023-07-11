@@ -95,6 +95,7 @@ section.counter {
   flex-direction: column;
   justify-content: space-evenly;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 section.counter h3,
 section.counter p {
@@ -166,4 +167,20 @@ section.controller ul label {
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .banner .banner-text {
+    width: 100%;
+  }
+  .banner .banner-text h1 {
+    font-size: 15vmin;
+  }
+  .banner .banner-img {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .banner .banner-img img {
+    width: 170px;
+  }
 }/*# sourceMappingURL=style.css.map */

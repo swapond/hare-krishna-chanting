@@ -103,6 +103,7 @@ section.counter {
   flex-direction: column;
   justify-content: space-evenly;
   margin-bottom: 20px;
+  cursor: pointer;
 
   h3,
   p {
@@ -184,5 +185,23 @@ section.controller {
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;
+  }
+}
+
+// Responsive Design
+@media (max-width: 640px) {
+  .banner .banner-text {
+    width: 100%;
+  }
+  .banner .banner-text h1 {
+    font-size: 15vmin;
+  }
+
+  .banner .banner-img {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .banner .banner-img img {
+    width: 170px;
   }
 }
