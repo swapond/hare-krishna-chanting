@@ -155,6 +155,7 @@ section.controller ul label {
   border-radius: 6px;
   border: 1px solid black;
   cursor: pointer;
+  color: black;
 }
 
 .footer {
@@ -170,11 +171,18 @@ section.controller ul label {
 }
 
 @media (max-width: 640px) {
+  .banner .container {
+    padding: 20px 10px;
+  }
   .banner .banner-text {
     width: 100%;
   }
   .banner .banner-text h1 {
-    font-size: 15vmin;
+    font-size: 2.8rem;
+    margin-top: 15px;
+  }
+  .banner .banner-text p {
+    margin: 15px 0;
   }
   .banner .banner-img {
     width: 100%;
@@ -182,5 +190,8 @@ section.controller ul label {
   }
   .banner .banner-img img {
     width: 170px;
+  }
+  button.btn-primary {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -172,6 +172,8 @@ section.controller {
     border-radius: 6px;
     border: 1px solid black;
     cursor: pointer;
+
+    color: black;
   }
 }
 
@@ -190,11 +192,20 @@ section.controller {
 
 // Responsive Design
 @media (max-width: 640px) {
+  .banner .container {
+    padding: 20px 10px;
+  }
+
   .banner .banner-text {
     width: 100%;
   }
   .banner .banner-text h1 {
-    font-size: 15vmin;
+    font-size: 2.8rem;
+    margin-top: 15px;
+  }
+
+  .banner .banner-text p {
+    margin: 15px 0;
   }
 
   .banner .banner-img {
@@ -203,5 +214,8 @@ section.controller {
   }
   .banner .banner-img img {
     width: 170px;
+  }
+  button.btn-primary {
+    font-size: 18px;
   }
 }
