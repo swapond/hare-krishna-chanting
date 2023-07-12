@@ -119,8 +119,7 @@ function incrementCounter() {
     updateCounter();
 
     // Notification Sound
-    const notification = new Audio("assets/sounds/notification.mp3");
-    notification.play();
+    playNotification();
   }
 
   // Save count and Completed round to the browser memory
