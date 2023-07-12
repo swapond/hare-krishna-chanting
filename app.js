@@ -8,6 +8,7 @@ let completedRound = previousCount ? parseInt(previousCompletedRound) : 0;
 const counterContainer = document.querySelector("#counter-container");
 const counterDisplay = document.querySelector("#counter-display");
 const completedRoundText = document.querySelector("#completed-round");
+const autoCountBtn = document.querySelector("#auto-count");
 const resetCountBtn = document.querySelector("#reset-count");
 const resetRoundBtn = document.querySelector("#reset-round");
 const resetAllBtn = document.querySelector("#reset-all");
@@ -139,6 +140,8 @@ document.addEventListener("keyup", function (event) {
 });
 // Handle click event to count up
 counterContainer.addEventListener("click", incrementCounter);
+
+// Auto Count Functionality
 
 // Handle button click event to reset count
 // Reset Count
