@@ -21,8 +21,8 @@ function updateCompletedRound() {
 
 // Voice selection functionality
 const voices = [
-  { name: "Srila Provapad", src: "assets/sounds/chant.mp3" },
-  { name: "Girl", src: "assets/sounds/chant.mp3" },
+  { name: "Srila Provapad", src: "assets/sounds/provupad.wav" },
+  { name: "Girl", src: "assets/sounds/girl.wav" },
 ];
 
 const voiceSelect = document.querySelector("#voice");
@@ -59,10 +59,45 @@ speedSelect.addEventListener("change", function () {
   playbackRate = parseFloat(speedSelect.value);
 });
 
+// Notification selection functionality
+const notifications = [
+  { label: "On", value: true },
+  { label: "Off", value: false },
+];
+
+const notificationForm = document.querySelector("#notification");
+let notificationsEnabled = true;
+
+notifications.forEach(function (notification, index) {
+  const input = document.createElement("input");
+  input.type = "radio";
+  input.name = "notification";
+  input.id = notification.label.toLowerCase();
+  input.value = notification.value;
+  input.checked = index === 0;
+  input.addEventListener("change", function () {
+    notificationsEnabled = this.checked && this.value === "true";
+  });
+
+  const label = document.createElement("label");
+  label.htmlFor = input.id;
+  label.textContent = notification.label;
+
+  notificationForm.appendChild(input);
+  notificationForm.appendChild(label);
+});
+
 function playVoice() {
   const voice = new Audio(voiceSelect.value);
   voice.playbackRate = playbackRate;
   voice.play();
+}
+
+function playNotification() {
+  if (notificationsEnabled) {
+    const notificationSound = new Audio("assets/sounds/notification.mp3");
+    notificationSound.play();
+  }
 }
 
 // Increament Functionality
