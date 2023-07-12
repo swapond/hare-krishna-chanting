@@ -21,7 +21,7 @@ function updateCompletedRound() {
 
 // Voice selection functionality
 const voices = [
-  { name: "Srila Provapad", src: "assets/sounds/provupad.wav" },
+  { name: "Srila Provapad", src: "assets/sounds/provupad.mp3" },
   { name: "Girl", src: "assets/sounds/girl.wav" },
 ];
 
