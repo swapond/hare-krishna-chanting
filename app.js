@@ -8,6 +8,9 @@ let completedRound = previousCount ? parseInt(previousCompletedRound) : 0;
 const counterContainer = document.querySelector("#counter-container");
 const counterDisplay = document.querySelector("#counter-display");
 const completedRoundText = document.querySelector("#completed-round");
+const resetCountBtn = document.querySelector("#reset-count");
+const resetRoundBtn = document.querySelector("#reset-round");
+const resetAllBtn = document.querySelector("#reset-all");
 
 //   Update the counter display
 function updateCounter() {
@@ -127,15 +130,38 @@ function incrementCounter() {
   localStorage.setItem("completedRound", completedRound);
 }
 
-// Keyboard and touch functionallity
+// Keyboard and click to increment count functionallity
 // Handle keyup event to count up
 document.addEventListener("keyup", function (event) {
   if (event.key === "Enter") {
     incrementCounter();
   }
 });
-// Handle touch event to count up
+// Handle click event to count up
 counterContainer.addEventListener("click", incrementCounter);
+
+// Handle button click event to reset count
+// Reset Count
+function resetCount() {
+  count = 0;
+  localStorage.setItem("count", count);
+  updateCounter();
+}
+resetCountBtn.addEventListener("click", resetCount);
+
+// Reset Round
+function resetRound() {
+  completedRound = 0;
+  localStorage.setItem("completedRound", completedRound);
+  updateCompletedRound();
+}
+resetRoundBtn.addEventListener("click", resetRound);
+
+// Reset All
+resetAllBtn.addEventListener("click", function () {
+  resetCount();
+  resetRound();
+});
 
 // Initialize the counter and completed round display
 updateCounter();
