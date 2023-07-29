@@ -38,6 +38,15 @@ button.btn-primary {
   margin-right: auto;
 }
 
+nav {
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 10px;
+}
+nav h3, nav i {
+  font-size: 1.5rem;
+}
+
 .banner {
   background: linear-gradient(300deg, #a31517, #a31518);
 }
@@ -111,6 +120,12 @@ section.counter .completed-chant {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.keyboard {
+  color: brown;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 section.controller ul {

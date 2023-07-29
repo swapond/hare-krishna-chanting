@@ -12,6 +12,7 @@ const autoCountBtn = document.querySelector("#auto-count");
 const resetCountBtn = document.querySelector("#reset-count");
 const resetRoundBtn = document.querySelector("#reset-round");
 const resetAllBtn = document.querySelector("#reset-all");
+const darkModeBtn = document.querySelector("#dark-mode");
 
 //   Update the counter display
 function updateCounter() {
@@ -169,3 +170,40 @@ resetAllBtn.addEventListener("click", function () {
 // Initialize the counter and completed round display
 updateCounter();
 updateCompletedRound();
+
+// Dark mode Functionality
+// JavaScript
+const htmlElement = document.documentElement;
+const darkModeToggle = document.getElementById("darkModeToggle");
+const darkModeIcon = document.getElementById("darkModeIcon");
+
+// Function to update the icon based on dark mode status
+function updateDarkModeIcon(darkModeEnabled) {
+  darkModeIcon.classList.remove("fa-sun", "fa-moon");
+  darkModeIcon.classList.add(darkModeEnabled ? "fa-sun" : "fa-moon");
+}
+
+function toggleDarkMode() {
+  // Toggle dark mode class on the root element
+  htmlElement.classList.toggle("dark-mode");
+
+  // Save dark mode preference to local storage
+  localStorage.setItem(
+    "darkModeEnabled",
+    htmlElement.classList.contains("dark-mode")
+  );
+
+  // Update the icon based on dark mode status
+  updateDarkModeIcon(htmlElement.classList.contains("dark-mode"));
+}
+
+function checkDarkMode() {
+  // Check if dark mode is enabled in local storage
+  if (localStorage.getItem("darkModeEnabled") === "true") {
+    darkModeToggle.checked = true;
+    toggleDarkMode();
+  }
+}
+
+// Initialize the icon when the page loads
+checkDarkMode();

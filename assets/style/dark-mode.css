@@ -1,0 +1,41 @@
+.dark-mode html {
+  color-scheme: dark;
+}
+.dark-mode html,
+.dark-mode body {
+  background-color: #181a1b;
+  border-color: #736b5e;
+  color: #e8e6e3;
+}
+.dark-mode .banner {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(300deg, rgb(130, 17, 18), rgb(130, 17, 19));
+}
+.dark-mode .banner .banner-text {
+  color: rgb(232, 230, 227);
+}
+.dark-mode button.btn-primary {
+  border-color: currentcolor;
+  color: rgb(232, 230, 227);
+  background-color: rgb(24, 26, 27);
+}
+.dark-mode section.counter {
+  background-color: rgb(24, 26, 27);
+  border-color: rgb(58, 63, 65);
+}
+.dark-mode .keyboard {
+  color: #d76363;
+}
+.dark-mode section.controller ul select {
+  border-color: rgb(140, 130, 115);
+}
+.dark-mode .functional-btn .btn-function {
+  background-color: rgb(24, 26, 27);
+  border-color: rgb(140, 130, 115);
+  color: rgb(232, 230, 227);
+}
+.dark-mode .footer {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(300deg, rgb(130, 17, 18), rgb(130, 17, 19));
+  color: rgb(232, 230, 227);
+}/*# sourceMappingURL=dark-mode.css.map */

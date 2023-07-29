@@ -37,6 +37,16 @@ button.btn-primary {
   margin-right: auto;
 }
 
+nav{
+align-items: center;  
+justify-content: space-between;
+padding: 40px 10px;
+
+h3, i{
+  font-size: 1.5rem;
+}
+}
+
 .banner {
   //   background-color: lea (45deg, #a31518, #a31518);
   background: linear-gradient(300deg, #a31517, #a31518);
@@ -120,6 +130,12 @@ section.counter {
     left: 50%;
     transform: translateX(-50%);
   }
+}
+
+.keyboard{
+  color: brown;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 section.controller {
