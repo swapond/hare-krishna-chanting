@@ -2,15 +2,12 @@
   color-scheme: dark;
 }
 .dark-mode body {
-  background-color: #181a1b;
+  background-color: #121212;
   border-color: #736b5e;
   color: #e8e6e3;
 }
 .dark-mode table {
   border-color: #545b5e;
-}
-.dark-mode ::-moz-placeholder {
-  color: #b2aba1;
 }
 .dark-mode ::placeholder {
   color: #b2aba1;
@@ -18,20 +15,16 @@
 .dark-mode input:-webkit-autofill,
 .dark-mode textarea:-webkit-autofill,
 .dark-mode select:-webkit-autofill {
-  background-color: #404400 !important;
-  color: #e8e6e3 !important;
-}
-.dark-mode ::-moz-selection {
-  background-color: #004daa !important;
-  color: #e8e6e3 !important;
+  background-color: #404400;
+  color: #e8e6e3;
 }
 .dark-mode ::selection {
-  background-color: #004daa !important;
-  color: #e8e6e3 !important;
+  background-color: #004daa;
+  color: #e8e6e3;
 }
 .dark-mode ::-moz-selection {
-  background-color: #004daa !important;
-  color: #e8e6e3 !important;
+  background-color: #004daa;
+  color: #e8e6e3;
 }
 .dark-mode .banner {
   background-color: rgba(0, 0, 0, 0);
@@ -43,10 +36,10 @@
 .dark-mode button.btn-primary {
   border-color: currentcolor;
   color: rgb(232, 230, 227);
-  background-color: rgb(24, 26, 27);
+  background-color: #121212;
 }
 .dark-mode section.counter {
-  background-color: rgb(24, 26, 27);
+  background-color: #121212;
   border-color: rgb(58, 63, 65);
 }
 .dark-mode .keyboard {
