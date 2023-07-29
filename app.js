@@ -207,3 +207,26 @@ function checkDarkMode() {
 
 // Initialize the icon when the page loads
 checkDarkMode();
+
+// Scroll BTN
+document.getElementById("scrollButton").addEventListener("click", function () {
+  // Get the target element's position
+  const targetElement = document.getElementById("counter-container");
+  const targetPosition = targetElement.getBoundingClientRect().top;
+
+  // Scroll to the target element
+  window.scrollBy({
+    top: targetPosition,
+    behavior: "smooth", // This will create a smooth scrolling effect
+  });
+});
+
+// Auto scroll to the
+window.addEventListener("load", function () {
+  const sectionToScroll = document.getElementById("counter-container");
+  const offset = sectionToScroll.getBoundingClientRect().top;
+  window.scrollBy({
+    top: offset,
+    behavior: "smooth",
+  });
+});
