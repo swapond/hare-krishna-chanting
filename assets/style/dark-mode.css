@@ -46,10 +46,11 @@
   color: #d76363;
 }
 .dark-mode section.controller ul select {
+  background: transparent;
   border-color: rgb(140, 130, 115);
 }
 .dark-mode .functional-btn .btn-function {
-  background-color: rgb(24, 26, 27);
+  background-color: #121212;
   border-color: rgb(140, 130, 115);
   color: rgb(232, 230, 227);
 }

@@ -127,6 +127,10 @@ section.counter .completed-chant {
   transform: translateX(-50%);
 }
 
+section.counter:active {
+  background-color: none;
+}
+
 .keyboard {
   color: brown;
   font-weight: bold;
