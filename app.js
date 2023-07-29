@@ -221,7 +221,7 @@ document.getElementById("scrollButton").addEventListener("click", function () {
   });
 });
 
-// Auto scroll to the
+// Auto scroll to the counter section
 window.addEventListener("load", function () {
   const sectionToScroll = document.getElementById("counter-container");
   const offset = sectionToScroll.getBoundingClientRect().top;
