@@ -39,11 +39,16 @@ button.btn-primary {
 }
 
 nav {
+  padding: 30px 10px;
+  margin-bottom: 3rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+nav .container {
   align-items: center;
   justify-content: space-between;
-  padding: 40px 10px;
 }
-nav h3, nav i {
+nav h3,
+nav i {
   font-size: 1.5rem;
 }
 
@@ -193,8 +198,12 @@ section.controller ul label {
 }
 
 @media (max-width: 640px) {
-  .banner .container {
+  nav {
     padding: 20px 10px;
+    margin-bottom: 0;
+  }
+  .banner .container {
+    padding: 30px 10px;
   }
   .banner .banner-text {
     width: 100%;

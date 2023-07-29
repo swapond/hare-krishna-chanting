@@ -37,14 +37,19 @@ button.btn-primary {
   margin-right: auto;
 }
 
-nav{
-align-items: center;  
-justify-content: space-between;
-padding: 40px 10px;
+nav {
+  .container {
+    align-items: center;
+    justify-content: space-between;
+  }
+  padding: 30px 10px;
+  margin-bottom: 3rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 
-h3, i{
-  font-size: 1.5rem;
-}
+  h3,
+  i {
+    font-size: 1.5rem;
+  }
 }
 
 .banner {
@@ -132,7 +137,7 @@ section.counter {
   }
 }
 
-.keyboard{
+.keyboard {
   color: brown;
   font-weight: bold;
   font-size: 16px;
@@ -215,8 +220,13 @@ section.controller {
 
 // Responsive Design
 @media (max-width: 640px) {
-  .banner .container {
+  nav {
     padding: 20px 10px;
+    margin-bottom: 0;
+  }
+
+  .banner .container {
+    padding: 30px 10px;
   }
 
   .banner .banner-text {
