@@ -35,11 +35,7 @@
 
   .banner {
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(
-      300deg,
-      rgb(130, 17, 18),
-      rgb(130, 17, 19)
-    );
+
   }
 
   .banner .banner-text {
@@ -50,7 +46,7 @@
     border-color: currentcolor;
     color: rgb(232, 230, 227);
     // background-color: rgb(24, 26, 27);
-    background-color: #121212;
+    background-color: #494949;
   }
 
   section.counter {
@@ -75,13 +71,13 @@
     color: rgb(232, 230, 227);
   }
 
+  .functional-btn button {
+    border: 1px solid #2E3440;
+  }
+
   .footer {
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(
-      300deg,
-      rgb(130, 17, 18),
-      rgb(130, 17, 19)
-    );
+
     color: rgb(232, 230, 227);
   }
 }

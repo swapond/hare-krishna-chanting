@@ -6,9 +6,8 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  font-family: "Baloo Da 2", cursive;
-  background: #f6f7f9;
+  font-family: "Rubik", sans-serif;
+  background: #f2f4f8;
 }
 
 img {
@@ -33,7 +32,7 @@ button.btn-primary {
 
 .container,
 .fixed-width {
-  max-width: 1140px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -41,7 +40,6 @@ button.btn-primary {
 nav {
   padding: 30px 10px;
   margin-bottom: 3rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
 }
 nav .container {
   align-items: center;
@@ -52,9 +50,6 @@ nav i {
   font-size: 1.5rem;
 }
 
-.banner {
-  background: linear-gradient(300deg, #a31517, #a31518);
-}
 .banner .container {
   display: flex;
   align-items: center;
@@ -64,14 +59,16 @@ nav i {
 }
 .banner .banner-text {
   width: 60%;
-  color: white;
+  color: #3B4252;
 }
 .banner .banner-text h1 {
-  font-size: 3.7rem;
+  font-size: 41px;
+  font-weight: 700;
   text-transform: uppercase;
-  line-height: 1.2;
+  line-height: 62px;
 }
 .banner .banner-text p {
+  font-size: 20px;
   line-height: 30px;
   margin: 24px 0;
   max-width: 545px;
@@ -103,8 +100,8 @@ section.counter {
   background-color: #fff;
   margin-top: 100px;
   max-width: 750px;
-  border-radius: 5px;
-  border: 2px solid #dbdbdb;
+  border-radius: 8px;
+  box-shadow: rgba(184, 194, 215, 0.25) 0px 4px 6px, rgba(184, 194, 215, 0.1) 0px 5px 7px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -122,13 +119,14 @@ section.counter .counter-text {
 }
 section.counter .completed-chant {
   position: absolute;
-  bottom: 10px;
+  bottom: 16px;
   left: 50%;
   transform: translateX(-50%);
+  font-weight: 500;
 }
 
 section.counter:active {
-  background-color: none;
+  background-color: unset;
 }
 
 .keyboard {
@@ -153,9 +151,12 @@ section.controller ul li {
 section.controller ul .flex {
   gap: 6px;
 }
+section.controller ul label {
+  font-weight: 500;
+}
 section.controller ul select {
-  border: 1px solid black;
-  padding: 4px 4px;
+  border: 1px solid transparent;
+  padding: 10px 4px;
   border-radius: 4px;
   margin-left: 4px;
 }
@@ -180,19 +181,20 @@ section.controller ul label {
   margin-top: 40px;
 }
 .functional-btn .btn-function {
-  font-size: 16px;
-  padding: 10px;
-  background-color: #fff;
-  border-radius: 6px;
-  border: 1px solid black;
+  border: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
   cursor: pointer;
-  color: black;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  text-transform: uppercase;
 }
 
 .footer {
-  background: linear-gradient(300deg, #a31517, #a31518);
   padding: 40px 20px;
-  color: #fff;
+  color: #2E3440;
   text-align: center;
 }
 .footer small {
@@ -230,4 +232,6 @@ section.controller ul label {
   button.btn-primary {
     font-size: 18px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

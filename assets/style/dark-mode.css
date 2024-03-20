@@ -28,7 +28,6 @@
 }
 .dark-mode .banner {
   background-color: rgba(0, 0, 0, 0);
-  background-image: linear-gradient(300deg, rgb(130, 17, 18), rgb(130, 17, 19));
 }
 .dark-mode .banner .banner-text {
   color: rgb(232, 230, 227);
@@ -36,7 +35,7 @@
 .dark-mode button.btn-primary {
   border-color: currentcolor;
   color: rgb(232, 230, 227);
-  background-color: #121212;
+  background-color: #494949;
 }
 .dark-mode section.counter {
   background-color: #121212;
@@ -54,8 +53,12 @@
   border-color: rgb(140, 130, 115);
   color: rgb(232, 230, 227);
 }
+.dark-mode .functional-btn button {
+  border: 1px solid #2E3440;
+}
 .dark-mode .footer {
   background-color: rgba(0, 0, 0, 0);
-  background-image: linear-gradient(300deg, rgb(130, 17, 18), rgb(130, 17, 19));
   color: rgb(232, 230, 227);
-}/*# sourceMappingURL=dark-mode.css.map */
+}
+
+/*# sourceMappingURL=dark-mode.css.map */

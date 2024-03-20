@@ -1,197 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta
-      name="google-site-verification"
-      content="5mWn7ur6q5Pt4YlNrUD3dtWOLaVlZeVuq8_kZx-R-bY"
+            content="5mWn7ur6q5Pt4YlNrUD3dtWOLaVlZeVuq8_kZx-R-bY"
+            name="google-site-verification"
     />
     <!-- SEO -->
     <meta
-      name="description"
-      content="Track your Hare Krishna Maha Mantra chanting with our free online 108-times counter app. Experience the divine journey with voices, including Shrila Prabhupada's, and get progress notifications on your Krishna nam path."
+            content="Track your Hare Krishna Maha Mantra chanting with our free online 108-times counter app. Experience the divine journey with voices, including Shrila Prabhupada's, and get progress notifications on your Krishna nam path."
+            name="description"
     />
     <meta
-      name="keywords"
-      content="Hare Krishna chanting counter,Hare Krishna chanting counter 108 times, Hare krishna nam jop online 108 bar, hare krishna mala jop app, Krishna mantra counter, Japa counter for Hare Krishna, Hare Krishna meditation tool, Chanting tracker for Hare Krishna, Mantra chanting counter, Hare Krishna japamala, Krishna bhakti app, Spiritual chanting tool, Hare Krishna mantra tally online app, Chanting rosary for Krishna, Hare Krishna mantra clicker, Bhakti practice tool, Krishna meditation counter, Hare Krishna mantra app, Japa meditation tracker, Hare Krishna chanting aid, Krishna nama japa counter"
+            content="Hare Krishna chanting counter,Hare Krishna chanting counter 108 times, Hare krishna nam jop online 108 bar, hare krishna mala jop app, Krishna mantra counter, Japa counter for Hare Krishna, Hare Krishna meditation tool, Chanting tracker for Hare Krishna, Mantra chanting counter, Hare Krishna japamala, Krishna bhakti app, Spiritual chanting tool, Hare Krishna mantra tally online app, Chanting rosary for Krishna, Hare Krishna mantra clicker, Bhakti practice tool, Krishna meditation counter, Hare Krishna mantra app, Japa meditation tracker, Hare Krishna chanting aid, Krishna nama japa counter"
+            name="keywords"
     />
 
     <title>
-      Hare Krishna Chanting Counter Online | Mala Jop 108 Bar Online
+        Hare Krishna Chanting Counter Online | Mala Jop 108 Bar Online
     </title>
     <script
-      src="https://kit.fontawesome.com/3e903a6f97.js"
-      crossorigin="anonymous"
+            crossorigin="anonymous"
+            src="https://kit.fontawesome.com/3e903a6f97.js"
     ></script>
-      <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/swapond/hare-krishna-chanting/main/assets/image/fav.png">
-    <link rel="stylesheet" href="assets/style/style.css" />
-    <link rel="stylesheet" href="assets/style/dark-mode.css" />
-  </head>
+    <link href="https://raw.githubusercontent.com/swapond/hare-krishna-chanting/main/assets/image/fav.png" rel="icon"
+          type="image/x-icon">
+    <link href="assets/style/style.css" rel="stylesheet"/>
+    <link href="assets/style/dark-mode.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+          rel="stylesheet">
+</head>
 
-  <body>
-    <header>
-      <nav>
+<body>
+<header>
+    <nav>
         <div class="flex container">
-          <h3>Hare Krishna Tracker</h3>
-          <div>
-            <!-- Your dark mode toggle switch -->
-            <span id="darkModeToggle" onclick="toggleDarkMode()">
+            <h3>Hare Krishna Tracker</h3>
+            <div>
+                <!-- Your dark mode toggle switch -->
+                <span id="darkModeToggle" onclick="toggleDarkMode()">
               <!-- Font Awesome icon -->
-              <i id="darkModeIcon" class="fa fa-moon"></i>
+              <i class="fa fa-moon" id="darkModeIcon"></i>
             </span>
-          </div>
+            </div>
         </div>
-      </nav>
-      <div class="banner">
+    </nav>
+    <div class="banner">
         <div class="container">
-          <div class="banner-text">
-            <h1>
-              Hare Krishna Chanting Counter <br />
-              108 Times
-            </h1>
-            <p>
-              Immerse yourself in the divine vibrations of Hare Krishna Chanting
-              online. Chant the mantra 108 times, unite with a global community
-              of seekers, and experience inner peace, spiritual rejuvenation,
-              and a profound sense of unity with Lord Krishna.
-            </p>
-            <button id="scrollButton" class="btn-primary">
-              Start Chanting <i class="fa-solid fa-caret-down"></i>
-            </button>
-          </div>
-          <div class="banner-img">
-            <img
-              src="assets/image/banner2.webp"
-              alt="Hare Krishna 108 Times Online Chant Counting Banner"
-            />
-          </div>
+            <div class="banner-text">
+                <h1>
+                    Hare Krishna Chanting Counter <br/>
+                    108 Times
+                </h1>
+                <p>
+                    Immerse yourself in the divine vibrations of Hare Krishna Chanting
+                    online. Chant the mantra 108 times, unite with a global community
+                    of seekers, and experience inner peace, spiritual rejuvenation,
+                    and a profound sense of unity with Lord Krishna.
+                </p>
+                <button class="btn-primary" id="scrollButton">
+                    Start Chanting <i class="fa-solid fa-caret-down"></i>
+                </button>
+            </div>
+            <div class="banner-img">
+                <img
+                        alt="Hare Krishna 108 Times Online Chant Counting Banner"
+                        src="assets/image/banner2.webp"
+                />
+            </div>
         </div>
-      </div>
-    </header>
-    <main>
-      <section class="counter fixed-width" id="counter-container">
+    </div>
+</header>
+<main>
+    <section class="counter fixed-width" id="counter-container">
         <div class="text">
-          <h3>পঞ্চতত্বের মন্ত্র</h3>
-          <p>
-            জয় শ্রী-কৃষ্ণ-চৈতন্য প্রভু-নিত্যানন্দ। শ্রী-অদ্বৈত গদাধর
-            শ্রীবাসাধি-গৌর-ভক্ত-বৃন্দ।।
-          </p>
+            <h3>পঞ্চতত্বের মন্ত্র</h3>
+            <p>
+                জয় শ্রী-কৃষ্ণ-চৈতন্য প্রভু-নিত্যানন্দ। শ্রী-অদ্বৈত গদাধর
+                শ্রীবাসাধি-গৌর-ভক্ত-বৃন্দ।।
+            </p>
         </div>
         <h3 class="counter-text" id="counter-display">0</h3>
         <h4 class="completed-chant">
-          Completed Round: <span id="completed-round">0</span>
+            Completed Round: <span id="completed-round">0</span>
         </h4>
-      </section>
+    </section>
 
-      <section class="controller">
+    <section class="controller">
         <div class="tool-tip">
-          <i class="fa-regular fa-hand-pointer"></i>
-          <p>
-            Click the card or press
-            <kbd class="keyboard">enter</kbd> for increase counting.
-          </p>
+            <i class="fa-regular fa-hand-pointer"></i>
+            <p>
+                Click the card or press
+                <kbd class="keyboard">enter</kbd> for increase counting.
+            </p>
         </div>
         <ul>
-          <li>
-            Voice:
-            <form>
-              <select name="voice" id="voice"></select>
-            </form>
-          </li>
-          <li>
-            Speed:
-            <form><select name="speed" id="speed"></select></form>
-          </li>
-          <li class="flex">
-            Complation Notification:
-            <form id="notification"></form>
-          </li>
+            <li>
+                <form>
+                    <label for="voice">Voice:</label><select id="voice" name="voice"></select>
+                </form>
+            </li>
+            <li>
+
+                <form><label for="speed">Speed:</label><select id="speed" name="speed"></select></form>
+            </li>
+            <li class="flex">
+                <label>Completion Notification:</label>
+                <form id="notification"></form>
+            </li>
         </ul>
         <ul class="functional-btn">
-          <li>
-            <button class="btn-function btn-primary" id="auto-count">
-              Auto Count
-            </button>
-          </li>
-          <li>
-            <button class="btn-function" id="reset-count">Reset Counter</button>
-          </li>
-          <li>
-            <button class="btn-function" id="reset-round">
-              Reset Saved Round
-            </button>
-          </li>
-          <li>
-            <button class="btn-function" id="reset-all">Reset All</button>
-          </li>
+            <li>
+                <button class="btn-function btn-primary" id="auto-count">
+                    Auto Count
+                </button>
+            </li>
+            <li>
+                <button class="btn-function" id="reset-count">Reset Counter</button>
+            </li>
+            <li>
+                <button class="btn-function" id="reset-round">
+                    Reset Saved Round
+                </button>
+            </li>
+            <li>
+                <button class="btn-function" id="reset-all">Reset All</button>
+            </li>
         </ul>
-      </section>
+    </section>
 
-      <!-- Content -->
-      <section class="features">
-        <article class="container">
-          <h2>
-            Explore the Powerful Features of our Hare Krishna Chanting 108 Times
-            Online Website
-          </h2>
-          <p>
-            Experience a spiritually enriching journey with our Hare Krishna
-            Chanting 108 Times Online website, offering a variety of empowering
-            features to enhance your chanting practice and devotion:
-          </p>
-          <ul>
-            <li>
-              <strong> Notifications:</strong> Stay consistent and focused on
-              your chanting progress with completion notifications.
-            </li>
-            <li>
-              <strong>Guiding Voices:</strong> Immerse yourself in divine
-              vibrations with a selection of enchanting voices to follow along
-              with. Delight in the revered Shrila Prabhupada's voice and others
-              as your chanting companions.
-            </li>
-            <li>
-              <strong>Offline Capability:</strong> Our app optimizes bandwidth
-              usage and works offline after the initial load. Chant with ease,
-              whether you're in remote areas or without an internet connection.
-            </li>
-            <li>
-              <strong>Auto-Counting:</strong> Simplify your chanting practice
-              with the auto-count feature. Let the app take care of counting
-              your rounds while you delve deeper into your devotion.
-              <span style="color: brown">*Currently under contraction</span>
-            </li>
-            <li>
-              <strong>Intuitive User Interface:</strong> Our website boasts an
-              intuitive and user-friendly interface, catering to both newcomers
-              and experienced devotees. Navigate with ease and focus on your
-              spiritual journey.
-            </li>
-            <li>
-              <strong>Privacy and Security:</strong> Rest assured that your
-              personal data is safe and confidential. Your privacy is our
-              priority, ensuring a secure environment for your spiritual
-              practice.
-            </li>
-          </ul>
-          <p>
-            Whether you're a seasoned devotee or embarking on your spiritual
-            journey, our Hare Krishna Chanting 108 Times Online provides the
-            tools to deepen your spiritual connection and experience the bliss
-            of the Maha Mantra. Begin your chanting journey today and embrace a
-            path of devotion, harmony, and profound spiritual growth.
-          </p>
-        </article>
-      </section>
-    </main>
-    <footer class="footer">
-      <small
-        >Copyright 2023. <br />
+</main>
+<footer class="footer">
+    <small
+    >Copyright 2023. <br/>
         All rights reserved by <b> Swapon Das</b>
-      </small>
-    </footer>
+    </small>
+</footer>
 
-    <script src="app.js"></script>
-  </body>
+<script src="app.js"></script>
+</body>
 </html>
