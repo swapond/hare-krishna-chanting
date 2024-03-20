@@ -27,7 +27,8 @@ function updateCompletedRound() {
 // Voice selection functionality
 const voices = [
     {name: "Prabhupada", src: "assets/sounds/provupad.mp3"},
-    {name: "Flute 🪈", src: "assets/sounds/flute.wav"},
+    {name: "Alert", src: "assets/sounds/alert.wav"},
+    {name: "Flute", src: "assets/sounds/flute.wav"},
     {name: "Girl", src: "assets/sounds/girl.wav"},
 ];
 
@@ -101,7 +102,7 @@ function playVoice() {
 
 function playNotification() {
     if (notificationsEnabled) {
-        const notificationSound = new Audio("assets/sounds/notification.mp3");
+        const notificationSound = new Audio("assets/sounds/announce.wav");
         notificationSound.play();
     }
 }
